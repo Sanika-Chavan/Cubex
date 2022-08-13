@@ -1,0 +1,564 @@
+html{
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+}
+body{
+    margin-bottom: 8%;
+    background-color: rgb(170, 170, 170);
+}
+
+/*navbar*/
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(bg2.jpg) center center/cover no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    
+}
+.navbar{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+.slogo{
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 50%;
+}
+
+.logo{
+    font-size: 1.4em;
+    position: relative;
+    top: 0.1vw;
+    text-align: right;
+    margin: 0px 2px;
+}
+
+a:hover{
+    color: rgba(66, 66, 66, 0.575);
+}
+
+a{
+    color: rgb(0, 0, 0);
+    margin: 0px 5px;
+    padding: 0%;
+}
+
+hr{
+    margin:0px;
+}
+
+.nav-link{
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-link:hover{
+    text-decoration:underline black;
+}
+
+/* home section */
+
+.home{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 90vh;
+}
+
+.home .home-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.home .home-content h1{
+    color: white;
+    animation-name: name;
+    animation-duration: 6s;
+    font-size: 4rem;
+    margin-left: 10rem;
+}
+
+.dp{
+    border: 20px double rgba(255, 255, 255, 0.75);
+    /* box-shadow: 1px 1px 20px rgb(255, 255, 255); */
+    /* border-radius: 50%; */
+    height:auto;
+    width: 20%;
+    float: right;
+    position: absolute;
+    top:4.5em;
+    right: 10rem;
+}
+
+/* About Section */
+.about-content{
+    background: rgb(255, 254, 254);
+    width: 100%;
+    margin-top: 3rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px rgb(6, 39, 150)
+}
+
+.about-content .text{
+    width: 40%;
+    padding: 5px;
+    padding-right: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.about-content .text{
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #064172;
+}
+
+.photo{
+    width:90%;
+    height:auto;
+    display: flex;
+    margin-right: 0px;
+    border-radius: 2%;
+    /* border: 2px #0b67b3 double; */
+    position: relative;
+    top: -0.5em;
+    box-shadow: 2px 2px 15px gray; 
+}
+
+
+.about-content .info{
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content .info .personal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.about-content .info .personal .name{
+    width: 100%;
+    margin: 10px;
+    margin-left: 5%;
+    position: relative;
+    left:-1em;
+}
+
+.about-content .info .personal .name p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #064172;
+    font-weight: 500;
+}
+
+.about-content .info .personal .name p span{
+    font-weight: 650;
+    color: rgb(6, 6, 82);
+}
+
+.about-content .aboutme{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.about-content h2{
+    font-size: 2rem;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: rgb(6, 6, 82);
+}
+
+.about-content h2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0b67b3;
+}
+
+/* Educational Details */
+.edu{
+    background: black;
+    color: white;
+    text-align: center;
+}
+.edu .edu-content{
+    width: 100%;
+    /* margin-top: 1rem; */
+    padding: 2.2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 1px 1px 15px rgb(6, 39, 150); */
+}
+
+.edu-content .container {
+    flex-wrap: wrap;
+}
+
+.edu .container h2{
+    font-size: 2rem;
+    position: relative;
+    top:1em;
+    font-weight: 500;
+    margin-top: 3rem;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+
+}
+
+.edu h2::before{
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0b67b3;
+    /* margin-bottom: 10px; */
+}
+.edu .edu-content .card{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px 15px 0px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: auto;
+    transition: 1s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(50px);
+    top:-4.2rem;
+}
+
+.container .card:hover .face.face1{
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .cont{
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.container .card:hover .face.face1 .cont{
+    opacity: 1;
+}
+
+.container .card h3{
+    margin:10px 0 0;
+    padding:0;
+    /* color:rgb(115, 255, 0); */
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    top: 11.5rem;
+    z-index: 2;
+}
+.container .card h5{
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    top: 12rem;
+    z-index: 2;
+
+}
+
+.container .card:hover h3{
+    color: transparent;
+}
+.container .card:hover h5{
+    color: transparent;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-220px);
+    top:-4.2rem;
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    
+}
+
+.container .card .face.face2 .cont p{
+    margin:0;
+    padding:0px 3px ;
+    color: black;
+    font-size: 18px;
+    font-weight:500;
+}
+
+.container .card .face.face2 .cont  ul{
+    margin:0;
+    padding:0px 5px 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-weight:500;
+    text-align: left;
+}
+.container .card .face.face2 .cont  p span{
+    font-weight: 750;
+}
+.container .card .face.face2 .cont  ul span{
+    font-weight: 750;
+}
+.pic{
+    width: 300px;
+    height: auto;
+}
+
+/* Achievements Section */
+.row{
+    text-align: center;
+    margin: 2% 0;
+}
+
+.achpic{
+    width: 11.5vw;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: rgb(0, 0, 0) 2px solid;
+}
+
+.coldiv{
+    margin-top: 15px;
+    font-size: 19.5px;
+    font-weight: 700;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 95%;
+    padding: 5%;
+    border-radius: 3%;
+    box-shadow: 4px 4px 30px rgb(37, 37, 37);
+    color: white;
+}
+
+.ach h2{
+    font-size: 2.5rem;
+    position: relative;
+    top:1.5rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: rgb(6, 6, 82);
+}
+
+.ach h2::before{
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0b67b3;
+}
+
+.ach{
+    position: relative;
+    top: -2rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.8)), url(achbg.jpg) center center/cover no-repeat;
+    padding-bottom: 2rem;
+}
+
+/*hobby page*/
+.hobby{
+    background-color: rgb(27, 25, 25);
+    padding: 2% 0%;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.hobby .container{
+    background: url(hbbg.jpg) center center/cover no-repeat;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border:3px rgb(255, 255, 255) solid;
+    box-shadow: 3px 3px 30px rgb(190, 190, 190);
+    display:flex;
+    flex-direction: row;
+}
+
+.hobby .container .hbdiv{
+    width:50%;
+    /* height: 100%; */
+    background: rgba(156, 156, 156, 0.11);
+    margin:0;
+}
+
+.hbimg1{
+    width:100%;
+    height:auto;
+}
+
+.hbdiv .hbimg2{
+    width:50%;
+    height:auto;
+    /* margin:4px white; */
+}
+
+.hbtext{
+    width:50%;
+    height:auto;
+    padding: 1% 2%;
+    color:rgb(58, 14, 0);
+    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    padding-top: 15%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hobby h2{
+    font-size: 2.5rem;
+    position: relative;
+    /* top:1.5rem; */
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.hobby h2::before{
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0b67b3;
+}
+
+/* Contact Section */
+.contact{
+    position: relative;
+    top:1.6rem;
+    /* color: white; */
+    width: 100%;
+    background: linear-gradient(rgba(80, 80, 80, 0.8),rgba(61, 61, 61, 0.8)), url(map.jpg) center center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact-content{
+    background: rgb(255, 255, 255);
+    position: relative;
+    color: black;
+    z-index: 100;
+    width: 80%;
+    box-shadow: 5px 5px 15px 8px rgb(36, 35, 35);
+    padding: 2.5rem;
+    margin: 0 auto;
+    
+}
+.contact h3{
+    font-size: 2rem;
+    position: relative;
+    /* top:1.5rem; */
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.contact h3::before{
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0b67b3;
+}
+
+
+.contact .contact-content .gettouch .info{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact .contact-content .gettouch .col i{
+    font-size: 30px;
+    color: #004680;
+    margin-right: 15px;
+}
+
+.flogo{
+    font-size: 2em;
+    margin: 3% auto 0;
+}
+
+.flogo a:hover{
+    color: #0b67b3;
+}
+
+/* Footer */
+.card-footer{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(bg2.jpg) center center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0%;
+}
+
+@keyframes name {
+    from { font-size: 0rem;}
+    to{ font-size: 4.2rem;}
+    
+}
